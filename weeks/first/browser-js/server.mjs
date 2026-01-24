@@ -12,7 +12,13 @@ const server = createServer((req, res) => {
     res.end(js);
     return;
   }
-  res.end(`<h1>hi</h1> <script src="/main.js"></script>`);
+
+  if (req.url === "/app.js") {
+     res.writeHead(200, { "content-type": "application/javascript" });
+     res.end(readFileSync("./app.js"));
+     return;
+  }
+  res.end(`<h1>hi</h1> <script type="module" src="/main.js"></script>`);
 });
 
 server.listen(3000, () => {
