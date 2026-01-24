@@ -1,0 +1,3 @@
+# memo
+
+`git config credential.helper 'cache --timeout 3600'`
