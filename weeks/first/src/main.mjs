@@ -1,5 +1,6 @@
 function main() {
-  console.log("main");
+
+  process.stdout.write("test\n");
 };
 
 main();
