@@ -3,6 +3,10 @@ function out(str) {
 }
 function main() {
 
+  const args = process.argv.slice(2);
+  console.log(args);
+
+
   const str = "strng";
 
   process.stdout.write("test\n");
