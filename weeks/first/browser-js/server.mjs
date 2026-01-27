@@ -2,6 +2,8 @@ import { createServer } from 'node:http';
 import { readFileSync } from 'node:fs';
 //console.log(createServer);
 
+const html = readFileSync("./index.html");
+console.log(html);
 const js = readFileSync("./main.js");
 //console.log(js);
 
@@ -18,7 +20,7 @@ const server = createServer((req, res) => {
      res.end(readFileSync("./app.js"));
      return;
   }
-  res.end(`<h1>hi</h1> <script type="module" src="/main.js"></script>`);
+  res.end(html);
 });
 
 server.listen(3000, () => {

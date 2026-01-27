@@ -5,4 +5,8 @@ const ws = createWriteStream("out/sample.txt");
 
 process.stdin.on("data", (chunk) => {
   ws.write(chunk);
+
+  if (chunk.toString().trim() === "exit") {
+    process.exit(1);
+  }
 });

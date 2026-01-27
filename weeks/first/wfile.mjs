@@ -1,4 +1,5 @@
-import { writeFile } from 'node:fs';
+import { writeFile, readFile } from 'node:fs';
+console.log(readFile);
 
 //get argv
 const content = "string";
