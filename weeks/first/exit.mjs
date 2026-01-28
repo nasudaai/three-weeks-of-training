@@ -1,5 +1,5 @@
 const args = process.argv.slice(2);
-console.log(args);
+//console.log(args);
 console.log("usage: exit -> .exit");
 
 //function write()
@@ -15,6 +15,9 @@ process.stdin.on("data", (chunk) => {
   process.stdout.write(chunk);
 
   if (chunk.toString().trim() === ".exit") {
+    const lines = arr.join("\n").toString();
+    console.log(lines);
+    console.log(arr.toString());
     process.exit(0);
   }
 })
