@@ -15,7 +15,7 @@ process.stdin.on("data", (chunk) => {
   process.stdout.write(chunk);
 
   if (chunk.toString().trim() === ".exit") {
-    const lines = arr.join("\n").toString();
+    const lines = Buffer.concat(arr).toString();
     console.log(lines);
     console.log(arr.toString());
     process.exit(0);
