@@ -7,4 +7,5 @@ fetch("/txt")
   .then(res => res.text())
   .then(text => {
     console.log(text)
+    p.textContent = text;
   })
