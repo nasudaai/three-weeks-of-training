@@ -5,7 +5,7 @@ if (args[0] === "c") {
   process.exit(0);
 }
 
-const data = readFileSync("sample.txt", "utf-8");
+const data = readFileSync("./out/sample.txt", "utf-8");
 console.log(data);
 process.stdout.write(data);
 
