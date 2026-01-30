@@ -10,6 +10,6 @@ process.stdin.on("data", (chunk) => {
     const data = readFileSync("out/sample.txt", "utf-8", );
     console.log(data);
     
-    process.exit(1);
+    process.exit(0);
   }
 });
