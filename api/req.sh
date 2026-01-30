@@ -1,1 +1,4 @@
-curl http://localhost:3000
+#!/bin/bash
+
+curl -X POST http://localhost:3000
+#curl http://localhost:3000
