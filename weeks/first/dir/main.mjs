@@ -5,7 +5,7 @@ console.log(args);
 
 function write() {
   //write line "\n"
-  process.stdout.write("func");
+  process.stdout.write("func" + "\n");
 };
 
 function main() {
