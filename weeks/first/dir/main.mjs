@@ -7,4 +7,7 @@ function write() {
   process.stdout.write("func");
 };
 
+function main() {
+  write();
+}
 write();
