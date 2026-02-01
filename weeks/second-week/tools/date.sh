@@ -1,7 +1,11 @@
 #!/bin/bash
 
 #date
-date "+%a %b %Y %d"
+abYd=$(date "+%a %b %Y %d")
 
-date "+%Y-%m-%d %a"
-date +"%Y-%m-%d %H:%M:%S"
+Ymda=$(date "+%Y-%m-%d %a")
+full=$(date +"%Y-%m-%d %H:%M:%S")
+
+echo "$abYd"
+echo "$Ymda"
+echo "$full"
