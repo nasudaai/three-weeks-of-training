@@ -2,13 +2,18 @@ const args = process.argv.slice(2);
 console.log(args);
 console.log("test");
 
+function insertValue(value) {
 
-const data = {
-  key: "value"
+  const obj = {
+    key: value 
+  };
+
+  return obj;
 };
 
-function reJson(data) {
-  return JSON.stringify(data);
+function reJson(obj) {
+
+  return JSON.stringify(obj);
 };
 
 function write(str) {
@@ -18,7 +23,7 @@ function write(str) {
 function main() {
   process.stdout.write("main");
   write("str");
-  const json = reJson(data);
+  const json = reJson(insertValue("value"));
   write(json);
 };
 
