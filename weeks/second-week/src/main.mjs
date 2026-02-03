@@ -1,4 +1,4 @@
-console.log("test");
+//console.log("test");
 
 function main() {
   process.stdout.write("test")
