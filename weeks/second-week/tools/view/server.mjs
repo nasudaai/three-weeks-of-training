@@ -1,4 +1,6 @@
 import { readFileSync } from 'node:fs';
 
-const file = readFileSync("../memo.md");
+const path = process.argv[2];
+
+const file = readFileSync(path);
 console.log(file);
