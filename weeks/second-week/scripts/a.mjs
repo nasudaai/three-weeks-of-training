@@ -1,7 +1,7 @@
 if ( process.argv.length >= 3 ) {
   console.log("test");
 } else {
-  process.stderr.write("please argv")
+  process.stderr.write("please argv" + "\n");
   process.exit(1);
 }
 
