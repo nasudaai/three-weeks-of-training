@@ -5,4 +5,8 @@ const logTitls = [ "money", "guitar", { "food-related-keys": ["calorie", "protei
 console.log(logTitls);
 
 
+const objVlue = logTitls[2];
+console.log(objVlue);
+
+
 process.stdout.write("test" + "\n");
