@@ -1,5 +1,8 @@
 const args = process.argv.slice(2);
 console.log(args);
+
+
+const value = args[0];
 console.log("test");
 
 function insertValue(value) {
@@ -25,7 +28,7 @@ function main() {
   write("str");
 
   // think think
-  const json = reJson(insertValue("value"));
+  const json = reJson(insertValue(value));
   write(json);
 };
 
