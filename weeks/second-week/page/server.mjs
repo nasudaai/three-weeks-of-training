@@ -1,7 +1,8 @@
 import { createServer } from 'node:http';
+import { readFileSync } from 'node:fs';
 console.log(createServer);
 
-const html = "html";
+const html = readFileSync("index.html");
 
 const server = createServer((req, res) => {
   res.end(html);
