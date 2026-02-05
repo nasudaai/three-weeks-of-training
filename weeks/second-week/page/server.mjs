@@ -3,8 +3,14 @@ import { readFileSync } from 'node:fs';
 console.log(createServer);
 
 const html = readFileSync("index.html");
+const js = readFileSync("main.js");
 
 const server = createServer((req, res) => {
+  if (req.url === "/main.js") {
+    res.writeHead(200, { "content-type": "application/javascript; charset=utf-8" });
+    res.end(js);
+    return;
+  }
   res.end(html);
 });
 
