@@ -3,8 +3,15 @@ import { readFileSync } from 'node:fs';
 //console.log(createServer);
 
 const html = readFileSync("index.html");
+const js = readFileSync("main.js");
+
 
 const server = createServer((req, res) => {
+  if (req.url === "/main.js") {
+    res.end(js);
+
+    return;
+  }
   res.end(html)
 });
 
