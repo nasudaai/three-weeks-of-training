@@ -23,6 +23,8 @@ function write(str) {
 function main() {
   process.stdout.write("main");
   write("str");
+
+  // think think
   const json = reJson(insertValue("value"));
   write(json);
 };
