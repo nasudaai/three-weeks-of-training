@@ -10,5 +10,7 @@ const objVlue = logTitls[2];
 console.log(objVlue);
 */
 
+const memoTitles = [ "money", "guitar", "calorie", "protein" ];
+console.log(memoTitles);
 
 process.stdout.write("test" + "\n");
