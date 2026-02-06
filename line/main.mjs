@@ -1,5 +1,11 @@
+//input
 const args = process.argv.slice(2);
 //console.log("test");
+
+//validation
+if (args.length === 0) {
+  process.stdout.write("please argument" + "\n");
+}
 
 const arr = ["a", "b", "c"];
 console.log(arr);
