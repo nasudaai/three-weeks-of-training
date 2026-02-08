@@ -5,9 +5,19 @@ console.log(args);
 
 const fileData = readFileSync("sample.md");
 
+//callback
 function readfile(file) {
   readFile(file, (err, data) => {
     write(data + "asyc\n");
+  });
+};
+
+//return promise
+function rePromise(file) {
+  return new Promise((resolve, reject) => {
+    readFile("sample.md", (err, data) => {
+      resolve(data);
+    });
   });
 };
 
@@ -20,6 +30,14 @@ function main() {
   write("test");
   write(fileData);
   readfile("sample.md");
+  rePromise("sample.md")
+    .then((data) => {
+      write(data);
+      return data.length;
+    })
+    .then(len => {
+      write(len);
+    });
 };
 
 main();
