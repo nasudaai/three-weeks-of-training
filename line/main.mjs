@@ -5,6 +5,13 @@ const args = process.argv.slice(2);
 //input file
 const data = readFileSync("text.txt", "utf-8");
 console.log(data);
+
+//async
+readFile("text.txt", (err, data) => {
+  console.log(data);
+});
+
+
 //console.log("test");
 
 //validation

@@ -1,8 +1,12 @@
 const args = process.argv.slice(2);
 console.log(args);
 
+//if ()
 
 const value = args[0];
+//const key = 
+
+
 console.log("test");
 
 function insertValue(value) {
