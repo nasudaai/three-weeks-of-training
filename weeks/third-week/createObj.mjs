@@ -1,3 +1,8 @@
+//one key one value
+
+process.stdout.write("default <key> <value>\n"); // mode key | add value | one prop
+
+
 const args = process.argv.slice(2);
 
 const obj = {};
@@ -6,7 +11,7 @@ const obj = {};
 let key = "";
 
 key = args[0];
-obj[key] = 1;
+obj[key] = args[1];
 
 
 console.log(obj);
