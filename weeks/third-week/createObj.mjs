@@ -1,5 +1,6 @@
 //one key one value
 
+//if (argv or args)
 process.stdout.write("default <key> <value>\n"); // mode key | add value | one prop
 
 
