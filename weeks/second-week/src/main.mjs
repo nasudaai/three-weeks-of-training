@@ -1,7 +1,7 @@
 //console.log("test");
 
 function main() {
-  process.stdout.write("test")
+  process.stdout.write("test" + "\n");
 };
 
 main();
