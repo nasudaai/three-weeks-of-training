@@ -10,6 +10,7 @@ function createLines() {
   const lines = [];
   for (let i = 0; i < txt.length; i++) {
     lines.push(txt[i]);
+    lines.push("\n")
     process.stdout.write(lines[i])
   }
 }
