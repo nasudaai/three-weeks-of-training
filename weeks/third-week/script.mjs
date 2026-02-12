@@ -8,7 +8,7 @@ for (let i = 0; i < txt.length; i++) {
 
 function createLines() {
   const lines = [];
-  for (let i = 0; i < txt.length; i++) {
+  for (let i = 0; i < txt.length * 2; i++) {
     lines.push(txt[i]);
     lines.push("\n")
     process.stdout.write(lines[i])
