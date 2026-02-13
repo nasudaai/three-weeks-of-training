@@ -6,4 +6,5 @@ const obj = {
   [key]: ""
 };
 
+obj[key] = "value";
 console.log(obj);
