@@ -6,5 +6,5 @@ const obj = {
   [key]: ""
 };
 
-obj[key] = "value";
+obj[key] = "value"; // let value = args[1];
 console.log(obj);
