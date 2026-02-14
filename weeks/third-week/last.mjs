@@ -1,10 +1,10 @@
-function fn(){
-  console.log("call")
+function fn(str){
+  console.log(str);
 };
 
-function call(callback) {
-  callback();
+function call(callback, str) {
+  callback(str);
 };
 
 
-call(fn);
+call(fn, "string");
